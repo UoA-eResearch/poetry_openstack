@@ -1,0 +1,9 @@
+clouds:
+  admin:
+    auth:
+      auth_url: https://keystone.rc.nectar.org.au:5000/v3/
+      user_domain_name: "Default"
+    region_name: "Melbourne"
+    interface: "public"
+    identity_api_version: 3
+    auth_type: "v3applicationcredential"
