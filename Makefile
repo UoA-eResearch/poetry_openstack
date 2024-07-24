@@ -17,5 +17,8 @@ install:
 update:
 	poetry update only main
 
+update_force:
+	poetry self update
+
 shell:
 	poetry shell
