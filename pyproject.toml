@@ -4,17 +4,19 @@ version = "0.1.0"
 description = "A simple environment to run OpenStack set of CLI tools in Python Poetry"
 authors = ["thomaslaurenson <thomas@thomaslaurenson.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-nectarallocationclient = {version = "1.9.0"}
-python-glanceclient = {version = "4.4.0"}
-python-neutronclient = {version = "11.1.0"}
-python-novaclient = {version = "18.4.0"}
-python-keystoneclient = {version = "5.4.0"}
-python-heatclient = {version = "3.5.0"}
-python-openstackclient = {version = "6.6.0"}
-python-designateclient = {version = "6.0.1"}
+nectarallocationclient = {version = "1.10.0"}
+python-designateclient = {version = "6.1.0"}
+python-glanceclient = {version = "4.7.0"}
+python-heatclient = {version = "4.0.0"}
+python-keystoneclient = {version = "5.5.0"}
+python-neutronclient = {version = "11.3.0"}
+python-novaclient = {version = "18.7.0"}
+python-openstackclient = {version = "7.0.0"}
+varroaclient = {version = "1.0.0.dev1"}
 
 [build-system]
 requires = ["poetry-core"]

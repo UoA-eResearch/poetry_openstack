@@ -12,7 +12,7 @@ lock:
 	poetry lock
 
 install:
-	poetry install --no-root
+	poetry install
 
 update:
 	poetry update only main
