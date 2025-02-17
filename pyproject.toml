@@ -11,12 +11,12 @@ python = "^3.10"
 nectarallocationclient = "^2.0.0"
 python-designateclient = "^6.1.0"
 python-glanceclient = "^4.7.0"
-python-heatclient = "^4.0.0"
+python-heatclient = "^4.1.0"
 python-keystoneclient = "^5.5.0"
-python-neutronclient = "^11.3.1"
-python-novaclient = "^18.7.0"
+python-neutronclient = "^11.4.0"
+python-novaclient = "^18.8.0"
 python-openstackclient = "^7.2.1"
-varroaclient = "^1.1.0"
+varroaclient = "^1.2.2"
 
 [build-system]
 requires = ["poetry-core"]
