@@ -1,23 +1,13 @@
-[tool.poetry]
-name = "poetry_openstack"
-version = "0.1.0"
-description = "A simple environment to run OpenStack set of CLI tools in Python Poetry"
-authors = ["thomaslaurenson <thomas@thomaslaurenson.com>"]
+[project]
+name = "uv_openstack"
+version = "0.2.0"
+description = "A simple environment to run OpenStack SDK and CLI tools with uv"
+authors = [{name = "thomaslaurenson", email = "thomas@thomaslaurenson.com"}]
 readme = "README.md"
-package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.10"
-nectarallocationclient = "^2.0.0"
-python-designateclient = "^6.3.0"
-python-glanceclient = "^4.10.0"
-python-heatclient = "^4.3.0"
-python-keystoneclient = "^5.7.0"
-python-neutronclient = "^11.6.0"
-python-novaclient = "^18.11.0"
-python-openstackclient = "^8.2.0"
-varroaclient = "^1.2.2"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.10"
+dependencies = [
+    "openstacksdk>=4.0.0",
+    "python-openstackclient>=8.2.0",
+    "nectarallocationclient>=2.0.0",
+    "varroaclient>=1.2.2",
+]

@@ -1,36 +1,21 @@
 venv_create:
-	poetry env use python3
-
-venv_list:
-	poetry env list; \
-	poetry env info
+	uv venv
 
 venv_remove:
-	poetry env remove python3
+	rm -rf .venv
 
 lock:
-	poetry lock
+	uv lock
 
 install:
-	poetry install
+	uv sync
 
-update_main:
-	poetry update only main
-
-update_force:
-	poetry self update
+update:
+	uv sync --upgrade
 
 update_packages:
-	poetry add nectarallocationclient@latest;
-	poetry add python-designateclient@latest;
-	poetry add python-glanceclient@latest;
-	poetry add python-heatclient@latest;
-	poetry add python-keystoneclient@latest;
-	poetry add python-neutronclient@latest;
-	poetry add python-novaclient@latest;
-	poetry add python-openstackclient@latest;
-	poetry add varroaclient@latest;
-	poetry lock
+	uv add --upgrade openstacksdk python-openstackclient nectarallocationclient varroaclient
+	uv lock
 
 shell:
-	poetry shell
+	. .venv/bin/activate && exec $$SHELL
