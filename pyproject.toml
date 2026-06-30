@@ -10,4 +10,5 @@ dependencies = [
     "python-openstackclient>=8.2.0",
     "nectarallocationclient>=2.0.0",
     "varroaclient>=1.2.2",
+    "python-barbicanclient>=7.4.0",
 ]
