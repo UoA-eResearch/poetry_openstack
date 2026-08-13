@@ -11,4 +11,5 @@ dependencies = [
     "nectarallocationclient>=2.0.0",
     "varroaclient>=1.2.2",
     "python-barbicanclient>=7.4.0",
+    "pysocks>=1.7.1",
 ]
